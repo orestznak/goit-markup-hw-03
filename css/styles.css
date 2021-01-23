@@ -150,6 +150,9 @@ body {
 }
 
 /*hero*/
+.hero {
+  background-color: var(--footer-background-color);
+}
 .hero .container {
   text-align: center;
   padding-top: 200px;
@@ -172,7 +175,7 @@ body {
 
 .hero-link {
   display: inline-block;
-  width: 200px;
+  min-width: 200px;
   height: 50px;
   border-radius: 4px;
   padding: 10px 32px;
