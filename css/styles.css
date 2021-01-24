@@ -451,6 +451,9 @@ footer .studio {
   margin-bottom: 30px;
 }
 
+.image-category {
+  display: block;
+}
 .category-discription {
   padding-top: 20px;
   padding-right: 24px;
