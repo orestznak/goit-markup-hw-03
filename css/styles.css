@@ -68,6 +68,10 @@ body {
   display: flex;
   align-items: center;
 }
+
+.navigation {
+  display: flex;
+}
 /*логотип сайта*/
 .logo {
   display: inline-block;
@@ -75,13 +79,11 @@ body {
   margin-bottom: 25px;
   margin-right: 93px;
   color: var(--logo-black-color);
-
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-
   text-decoration: none;
 }
 
@@ -92,8 +94,6 @@ body {
 /* навігація сайтом*/
 .site-nav {
   display: flex;
-  margin-top: 32px;
-  margin-bottom: 32px;
   align-items: center;
 }
 
@@ -106,7 +106,10 @@ body {
   margin-right: 50px;
 }
 
-.link {
+.site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -126,8 +129,6 @@ body {
 .nav-adress {
   display: flex;
   margin-left: auto;
-  margin-top: 32px;
-  margin-bottom: 32px;
   align-items: center;
 }
 
@@ -216,6 +217,10 @@ body {
   display: flex;
 }
 
+.features-list-item {
+  max-width: 270px;
+}
+
 .features-list-item:not(:last-child) {
   margin-right: 30px;
 }
@@ -261,6 +266,10 @@ body {
 .works-list-item {
   margin-left: 15px;
   margin-right: 15px;
+  max-width: 370px;
+}
+.image-work {
+  display: block;
 }
 
 /*--Наша команда (фото)*/
@@ -280,6 +289,9 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.team-list-item {
+  width: 270px;
+}
 
 .team-list-item:not(:nth-child(4n)) {
   margin-right: 30px;
@@ -294,7 +306,9 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
 }
-
+.image-team {
+  display: block;
+}
 .position {
   margin: 0px;
   font-weight: 400;
@@ -307,8 +321,8 @@ body {
 .team-list-content {
   padding-top: 30px;
   padding-bottom: 30px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /*footer*/
@@ -317,9 +331,8 @@ footer {
 }
 
 footer .container {
-  padding-top: 58px;
-  padding-bottom: 62px;
-  padding-right: 954px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 footer .logo {
   margin: 0px;
@@ -340,7 +353,11 @@ footer .studio {
   text-decoration: none;
 }
 
-.adress-item {
+.adress {
+  margin-bottom: 9px;
+}
+
+.adress-item:not(:last-child) {
   margin-bottom: 9px;
 }
 
@@ -384,14 +401,15 @@ footer .studio {
   margin-bottom: 50px;
 }
 
+.portfolio-list-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .filter {
   padding-top: 6px;
   padding-right: 20px;
   padding-bottom: 6px;
   padding-left: 20px;
-  margin-right: 8px;
-  min-width: 73px;
-  min-height: 38px;
   border: 0px solid var(--background-section-color);
   border-radius: 4px;
   color: var(--title-text-color);
