@@ -44,13 +44,19 @@ html {
   --footer-background-color: #2f303a;
   --footer-adress-color: rgba(255, 255, 255, 0.6);
   --header-line-color: #ececec;
+  --border-line-color: #eeeeee;
+  --content-team-shadow-v1: rgba(0, 0, 0, 20%);
+  --content-team-shadow-v2: rgba(0, 0, 0, 14%);
+  --content-team-shadow-v3: rgba(0, 0, 0, 12%);
 }
 body {
   color: var(--primary-text-color);
 
   font-family: Roboto, sans-serif;
 }
-
+img {
+  display: block;
+}
 .container {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -75,8 +81,6 @@ body {
 /*логотип сайта*/
 .logo {
   display: inline-block;
-  margin-top: 24px;
-  margin-bottom: 25px;
   margin-right: 93px;
   color: var(--logo-black-color);
   font-family: Raleway, sans-serif;
@@ -164,11 +168,9 @@ body {
   margin-top: 0px;
   margin-bottom: 30px;
   color: var(--primary-white-color);
-  /* background-color: var(--logo-black-color);*/
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -185,9 +187,7 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-
   letter-spacing: 0.06em;
-
   text-decoration: none;
 }
 
@@ -195,11 +195,9 @@ body {
 /*Особенности*/
 .section-title {
   color: var(--title-text-color);
-
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
-
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -268,9 +266,6 @@ body {
   margin-right: 15px;
   max-width: 370px;
 }
-.image-work {
-  display: block;
-}
 
 /*--Наша команда (фото)*/
 .team {
@@ -306,9 +301,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
 }
-.image-team {
-  display: block;
-}
+
 .position {
   margin: 0px;
   font-weight: 400;
@@ -323,6 +316,11 @@ body {
   padding-bottom: 30px;
   padding-left: 15px;
   padding-right: 15px;
+  background-color: var(--primary-white-color);
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px 0px var(--content-team-shadow-v1),
+    0px 1px 1px 0px var(--content-team-shadow-v2),
+    0px 1px 3px 0px var(--content-team-shadow-v3);
 }
 
 /*footer*/
@@ -343,17 +341,16 @@ footer .studio {
 }
 .footer-adress {
   color: var(--primary-white-color);
-
   font-weight: 400;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
-
   letter-spacing: 0.03em;
   text-decoration: none;
 }
 
 .adress {
+  margin-top: 0px;
   margin-bottom: 9px;
 }
 
@@ -364,7 +361,6 @@ footer .studio {
 .mail,
 .phone-number {
   color: var(--footer-adress-color);
-
   font-weight: 400;
   font-size: 14px;
   font-style: normal;
@@ -451,14 +447,13 @@ footer .studio {
   margin-bottom: 30px;
 }
 
-.image-category {
-  display: block;
-}
 .category-discription {
   padding-top: 20px;
   padding-right: 24px;
   padding-bottom: 20px;
   padding-left: 24px;
+  background-color: var(--primary-white-color);
+  border: 1px solid var(--border-line-color);
 }
 .category {
   margin-top: 0px;
@@ -475,10 +470,8 @@ footer .studio {
   margin-top: 0px;
   margin-bottom: 0px;
   color: var(--primary-text-color);
-
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
-
   letter-spacing: 0.03em;
 }
